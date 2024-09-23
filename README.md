@@ -1,2 +1,2 @@
 # 我的手册：
-# https://baixue0831.github.io
+# myhomepage: https://baixue0831.github.io
