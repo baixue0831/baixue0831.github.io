@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview with Nested Menu</title>
+    
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        /* 左侧多级菜单栏样式 */
+        .sidebar {
+            width: 20%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .sidebar a {
+            color: #007bff;
+            text-decoration: none;
+            padding: 8px 0;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #e9ecef;
+        }
+
+        .submenu {
+            margin-left: 20px;
+        }
+
+        /* 右侧内容区样式 */
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        /* 代码块样式 */
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">Code Examples</a>
+                <ul class="submenu">
+                    <li><a href="#section2-1">JavaScript Example</a></li>
+                    <li><a href="#section2-2">Python Example</a></li>
+                </ul>
+            </li>
+            <li><a href="#section3">Output and Results</a>
+                <ul class="submenu">
+                    <li><a href="#section3-1">Output Table</a></li>
+                    <li><a href="#section3-2">Final Analysis</a>
+                        <ul class="submenu">
+                            <li><a href="#section3-2-1">Analysis 1</a></li>
+                            <li><a href="#section3-2-2">Analysis 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2 id="section1">Introduction</h2>
+        <p>This project demonstrates how to use nested menus and anchors for navigation, with code examples and output tables.</p>
+
+        <h2 id="section2">Code Examples</h2>
+
+        <h3 id="section2-1">JavaScript Example</h3>
+        <pre><code class="language-javascript">
+// JavaScript Example Code
+function greet() {
+    console.log("Hello, JavaScript!");
+}
+greet();
+        </code></pre>
+
+        <h3 id="section2-2">Python Example</h3>
+        <pre><code class="language-python">
+# Python Example Code
+def greet():
+    print("Hello, Python!")
+
+greet()
+        </code></pre>
+
+        <h2 id="section3">Output and Results</h2>
+
+        <h3 id="section3-1">Output Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Result</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Success Rate</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>Execution Time</td>
+                    <td>0.5s</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="section3-2">Final Analysis</h3>
+
+        <h4 id="section3-2-1">Analysis 1</h4>
+        <p>The first analysis shows the success rate of the project.</p>
+
+        <h4 id="section3-2-2">Analysis 2</h4>
+        <p>The second analysis focuses on the execution time and performance optimization strategies.</p>
+    </div>
+
+    <!-- Prism.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+</body>
+</html>
